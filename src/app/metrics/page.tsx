@@ -1,6 +1,6 @@
 "use client";
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/Tabs";
 import {
   CommunityRankingTable,
   CommunityRankingTitle,
@@ -8,7 +8,6 @@ import {
 import { PostRankingTable, PostRankingTitle } from "./_/PostRanking";
 import { UsersLineChart } from "./_/UsersLineChart";
 import { CommunitiesLineChart } from "./_/CommunitiesLineChart";
-import { PostsLineChart } from "./_/PostsLineChart";
 import { chartData } from "./_/metricsData";
 
 type Props = {};
@@ -24,9 +23,6 @@ const page = (props: Props) => {
           </div>
           <div className="w-full">
             <CommunitiesLineChart data={chartData} />
-          </div>
-          <div className="w-full">
-            <PostsLineChart data={chartData} />
           </div>
         </div>
       </div>
