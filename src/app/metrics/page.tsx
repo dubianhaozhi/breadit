@@ -18,9 +18,11 @@ const page = (props: Props) => {
       <div className="mb-12">
         <h2 className="text-2xl font-semibold mb-2">推移データ</h2>
         <div className="flex justify-between gap-2">
+          {/* users line chart */}
           <div className="w-full">
             <UsersLineChart data={chartData} />
           </div>
+          {/* communities line chart */}
           <div className="w-full">
             <CommunitiesLineChart data={chartData} />
           </div>
