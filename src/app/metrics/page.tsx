@@ -9,6 +9,7 @@ import { PostRankingTable, PostRankingTitle } from "./_/PostRanking";
 import { UsersLineChart } from "./_/UsersLineChart";
 import { CommunitiesLineChart } from "./_/CommunitiesLineChart";
 import { chartData } from "./_/metricsData";
+import { PostsLineChart } from "./_/PostsLineChart";
 
 type Props = {};
 
@@ -25,6 +26,10 @@ const page = (props: Props) => {
           {/* communities line chart */}
           <div className="w-full">
             <CommunitiesLineChart data={chartData} />
+          </div>
+          {/* posts line chart */}
+          <div className="w-full">
+            <PostsLineChart data={chartData} />
           </div>
         </div>
       </div>
